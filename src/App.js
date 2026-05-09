@@ -28,11 +28,11 @@ function App() {
 
   useEffect(()=>{
     //Using this timer to reduced no of calls by using debouncing
-    const timer=setTimeout(fetchData,300);
-    return () =>{
-      clearTimeout(timer);
-    }
-    //fetchData();
+    // const timer=setTimeout(fetchData,300);
+    // return () =>{
+    //   clearTimeout(timer);
+    // }
+    fetchData();
   },[input]);
 
    // Clear input and results
